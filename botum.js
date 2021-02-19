@@ -19,7 +19,7 @@ botum.on("message", async (message,params,args) => {
     msg.channel.send("KoMUt bUluNaMaDI")
     }
   if(command === "token"){
-   msg.channel.send("EğLeNCe KOmuTlarInı KuLlAnmak İçİN boTa Oy VeRMeLİSiN!!!!111!)
+   msg.channel.send("EğLeNCe KOmuTlarInı KuLlAnmak İçİN boTa Oy VeRMeLİSiN!!!!111!")
   }
  if(msg.content === "sa"){
      msg.reply("as botum yardım.")
