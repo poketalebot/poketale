@@ -26,4 +26,11 @@ botum.on("message", async (message,params,args) => {
    }
 })
 
+botum.on('message', function (message) {
+	const randomNumber = Math.random();
+    if (randomNumber < 0.05) {
+		return message.reply(`SEVİYE ATLADIN! YENİ SEVİYEN: **${Math.floor((Math.random() * 21) + 2)} @here**`);
+    }
+});
+
 botum.login("tokenim")
