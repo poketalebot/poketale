@@ -10,6 +10,7 @@ botum.on('ready', async () => {
 });
 
 botum.on("message", async (message,params,args) => {
+  var msg = message
   	let command = msg.content.split(' ')[0].slice(prefix.length);
     if(command === "yardım") {
     msg.channel.send("sa yardım my botum")
@@ -20,7 +21,9 @@ botum.on("message", async (message,params,args) => {
   if(command === "token"){
    msg.channel.send("EğLeNCe KOmuTlarInı KuLlAnmak İçİN boTa Oy VeRMeLİSiN!!!!111!)
   }
- 
+ if(msg.content === "sa"){
+     msg.reply("as botum yardım.")
+   }
 })
 
 botum.login("tokenim")
